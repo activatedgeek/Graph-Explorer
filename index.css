@@ -1,0 +1,166 @@
+body{
+	font: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin-left: 0;
+	margin-right: 0;
+	cursor: default;
+	overflow: auto;
+}
+
+#play{
+	display: block;
+	position: relative;
+	float: left;
+	width: 75%;
+	height: 100%;
+	border: solid black 1px;
+	border-radius: 1em;
+	margin-right: 0.3em;
+	background: #c5deee;
+	transition: background 0.5s;
+}
+
+#play:hover{
+	background: #9fc8e3;
+}
+
+#control{
+	width: 23%;
+	float: left;
+	margin-left: 0;
+}
+
+#title{
+	font-size: 1.5em;
+	display: block;
+}
+#hint{
+	font-size: 0.8em;
+	font-style: italic;
+	text-align: center;
+	display: block;
+}
+
+.controls{
+	margin: 0.3em;
+	margin-left: 0;
+	padding: 0.5em;
+	font-size: 1em;
+	font-family: Verdana;
+	cursor: pointer;
+}
+
+.controls:hover{
+	background: gray;
+}
+
+.key{
+	color: green;
+	display: inline-block;
+	margin-left: 0.2em;
+}
+
+#block{
+	height: 3em;
+	margin: 0;
+}
+
+#msg{
+	display: inline-block;
+	position: relative;
+	height: 3em;
+	margin: 0.5em;
+	font-size: 1em;
+	font-style: italic;
+}
+
+#error{
+	position: relative;
+	display: block;
+	color: red;
+	font-weight: bold;
+	margin: 0.5em;
+	font-size: 1em;
+	font-style: italic;
+}
+
+#controls{
+	margin: 0;
+}
+
+input{
+	margin: 0.5em;
+}
+#savefile{
+	display: inline-block;
+	width: 80%;
+	height: 2.2em;
+	padding: 0.5em;
+	font-size: 1.3em;
+	border-radius: 1em;
+}
+#save,#open{
+	font-size: 1.2em;
+}
+
+#overlay{
+	background-color: rgba(0,0,0,0.7);
+	position: fixed;
+	margin: 0;
+	margin-top: -0.5em;
+	padding: 1em;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+.button{
+	width: 5em;
+	border: none;
+	border-radius: 1em;
+	background-color: #009dde;
+	color: white;
+	padding: 0.2em;
+	transition: background-color 0.5s;
+}
+.button:hover{
+	background-color: #2f34ec;
+}
+
+#files{
+	font-size: 1.5em;
+	padding: 1em;
+	width: 100%;
+}
+
+th{
+	text-align: left;
+	color: #008009;
+}
+
+#close{
+	position: fixed;
+	float: right;
+	margin-left: 80%;
+}
+
+.file{
+	color: white;
+	cursor: pointer;
+	width: 40%;
+	padding: 0.5em;
+	transition: background 0.5s;
+}
+
+.file:hover{
+	background: #d91548;
+}
+
+.date{
+	color: #19c0f3;
+}
+
+.delete{
+	width: 10%;
+	color: red;
+	cursor: pointer;
+}

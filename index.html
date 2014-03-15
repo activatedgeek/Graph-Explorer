@@ -1,0 +1,48 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Graphing Utility</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF8">
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<script type="text/javascript" src="jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="raphael.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+	</head>
+	<body>
+		<div id="control">
+			<span id="title">Choose Operation Mode</span>
+			<span id="hint">(Use arrow keys / hotkeys)</span>
+			</br>
+			<div id="block">
+				<span id="msg"></span>
+			</div>
+			<div id="controls">
+				<dl id='modes'>
+					<dt id='none' class='controls'>None<span class="key">(Esc)</span></dt>
+					<dt id='vert' class='controls'>Add <u>V</u>ertex<span class="key">(v)</span></dt>
+					<dt id='edge' class='controls'>Add <u>E</u>dge<span class="key">(e)</span></dt>
+					<dt id='mvert' class='controls'><u>M</u>ove Vertex<span class="key">(m)</span></dt>
+					<dt id='dvert' class='controls'><u>D</u>elete Vertex<span class="key">(d)</span></dt>
+					<dt id='dedge' class='controls'>Delete Ed<u>g</u>e<span class="key">(g)</span></dt>
+					<dt id='sp' class='controls'>Find <u>S</u>hortest Path<span class="key">(s)</span></dt>
+					<dt id='mst' class='controls'>Find MS<u>T</u><span class="key">(t)</span></dt>
+				</dl>
+			</div>
+			<div>
+				<input id="reset" class="button" type="button" value="Reset"/>
+				<input id="clear" class="button" type="button" value="Clear"/>
+				<input id="savefile" type="text" placeholder="Filename"/>
+				<input id="save" class="button" type="button" value="Save"/>
+				<input id="open" class="button" type="button" value="Open"/>
+			</div>
+		</div>
+		<div id="play">
+		</div>
+
+		<div id="overlay">
+			<input id="close" type="button" class="button" value="Close"/>
+			<table id="files">
+			</table>
+		</div>
+	</body>
+</html>
